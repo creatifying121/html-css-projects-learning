@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover; /* fit image in container */
+}
+.background {
+    transform: translateZ(-40px) scale(5.1);
+}
+.foreground {
+    transform: translateZ(-20px) scale(3.1);
+}
+h1 {
+    position: absolute;
+    top: 10rem;
+    left: 70%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
