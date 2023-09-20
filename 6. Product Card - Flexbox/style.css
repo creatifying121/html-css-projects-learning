@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+:root{
+    --cream:#f2ebe3;
+    --grey:#6c7289;
+    --green:#3c8067;
+    --darkGreen:#2f4c40;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    max-width: 50%;
+    /* background-color: yellow; */
+    box-shadow: 0px -1px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+}
+.container .image{
+    width: 45%;
+    border-radius: 5% 0% 0% 5%;
+    background-color: rebeccapurple;
+}
+.container .image .desktop-img, .mobile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5% 0% 0% 5%;
+}
+.container .image .mobile-img{
+    display: none;
+}
+.container .text{
+    width: 55%;
+    background-color: #fff;
+    color: var(--grey);
+    padding: 1.5rem 2rem;
+    border-radius: 0% 5% 5% 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.container .text .product{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+.container .text .product-title{
+    color: #000;
+    font-family: 'Fraunces', serif;
+    width: 80%;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 1.2rem;
+    font-weight: 700;
+}
+.container .text .product-desc{
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    width: 96%;
+}
+.container .text .product-price .current-price{
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Fraunces', serif;
+    margin-right: 1rem;
+}
+.container .text .product-price .old-price{
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+.container .text .button{
+    width: 100%;
+    background-color: var(--green);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0.9rem 0;
+    margin-top: 1.6rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.container .text .button .cart{
+    margin-right: 1rem;
+}
+.container .text .button .add-to-cart{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .text .button:hover{
+    background-color: var(--darkGreen);
+}
