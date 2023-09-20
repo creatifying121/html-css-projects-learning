@@ -100,3 +100,75 @@
 .container .text .button:hover{
     background-color: var(--darkGreen);
 }
+@media(max-width: 800px){
+    .wrapper{
+        height: 100vh;
+    }
+    .container{
+        flex-direction: column;
+        height: 95%;
+        max-width: 60%;
+    }
+    .container .image{
+        height: 45%;
+    }
+    .container .text{
+        height: 55%;
+    }
+    .container .text .product{
+        font-size: 0.7rem;
+    }
+    .container .text .product-title{
+        font-size: 1.5rem;
+        margin-top: 3%;
+    }
+    .container .text .product-desc{
+        font-size: 0.7rem;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    .container .image, .container .text{
+        width: 100%;
+    }
+    .container .image{
+        border-radius: 3% 3% 0% 0%;
+    }
+    .container .image .desktop-img{
+        display: none;
+    }
+    .container .image .mobile-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 3% 3% 0% 0%;
+    }
+    .container .text{
+        border-radius: 0% 0% 3% 3%;
+    }
+    .container .text .product-title{
+        width: 100%;
+    }
+    .container .text .product-price .current-price{
+        font-size: 1.2rem;
+    }
+    .container .text .product-price .old-price{
+        font-size: 0.7rem;
+    }
+    .container .text .product-price{
+        margin-top: 0;
+    }
+    .container .text .button{
+        width: 100%;
+        padding: 0.5rem 0;
+        margin-top: 1rem;
+    }
+    .container .text .button .add-to-cart{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 1100px){
+    .container{
+        max-width: 70%;
+    }
+}
