@@ -35,6 +35,6 @@ p{
     width: 860px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding: 100px 0;
 }
