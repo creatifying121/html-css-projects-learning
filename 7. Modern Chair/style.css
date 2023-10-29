@@ -35,6 +35,12 @@ p{
     width: 860px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding: 100px 0;
+}
+
+.section-fluid{
+    position: relative;
+    width: 100%;
+    display: block;
 }
