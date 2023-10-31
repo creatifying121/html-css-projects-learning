@@ -29,7 +29,7 @@ p{
     overflow: hidden;
 }
 
-.section{
+/* .section{
     position: relative;
     max-width: calc(100%-40px);
     width: 860px;
@@ -43,4 +43,4 @@ p{
     position: relative;
     width: 100%;
     display: block;
-}
+} */
